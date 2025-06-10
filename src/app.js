@@ -58,7 +58,7 @@ app.get('/health', (req, res) => {
   }
   res
     .status(200)
-    .json({ status: 'ok' });
+    .json(response);
 });
 
 // Define a porta do servidor, usando a variável de ambiente PORT ou 3000 como padrão
