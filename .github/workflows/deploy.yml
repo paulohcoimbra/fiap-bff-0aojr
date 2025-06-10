@@ -2,7 +2,7 @@ name: Deploy BFF to Render
 
 on:
   push:
-    branches: [main]
+    branches: [06-configure-actions]
 
 jobs:
   deploy:

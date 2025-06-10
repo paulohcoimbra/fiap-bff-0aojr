@@ -50,7 +50,15 @@ app.use('/ask', askRoute);
 
 // Define uma rota GET em '/health' que retorna um status 200 e um JSON indicando que o serviço está ok
 app.get('/health', (req, res) => {
-  res.status(200).json({ status: 'ok' });
+  const response = {
+    status: 'ok',
+    range: [
+      'entrypoint'
+    ]
+  }
+  res
+    .status(200)
+    .json({ status: 'ok' });
 });
 
 // Define a porta do servidor, usando a variável de ambiente PORT ou 3000 como padrão
