@@ -2,7 +2,7 @@ name: Deploy BFF to Render
 
 on:
   push:
-    branches: [07-bff-trabalho-final]
+    branches: [7-bff-trabalho-final]
 
 jobs:
   deploy:
