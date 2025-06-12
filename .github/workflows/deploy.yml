@@ -17,7 +17,7 @@ jobs:
           node-version: 18
 
       - name: Instalar dependências
-        run: npm ci
+        run: echo "Pulando etapa de npm ci"
 
       - name: Testes (se houver)
         run: echo "Adicionar testes futuramente"
