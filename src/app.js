@@ -21,6 +21,7 @@ const cors = require('cors');
 
 // Importa o roteador definido em 'routes/ask.js'
 const askRoute = require('./routes/ask');
+const blogRoute = require('./routes/blog')
 
 // Adiciona um middleware para interpretar requisições com corpo em JSON
 app.use(express.json());
@@ -47,6 +48,7 @@ app.use(limiter);
 
 // Define a rota '/ask' que utiliza o roteador importado de 'routes/ask.js'
 app.use('/ask', askRoute);
+app.use('/blog', blogRoute)
 
 // Define uma rota GET em '/health' que retorna um status 200 e um JSON indicando que o serviço está ok
 app.get('/health', (req, res) => {
