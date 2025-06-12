@@ -11,6 +11,10 @@ const data = [
         title: "Third Blog Post",
         content: "This is the content of the Third blog post."
     },
+        {
+        title: "Fourth Blog Post",
+        content: "This is the content of the Fourth blog post."
+    },
 ]
 
 function save(blog) {
