@@ -13,9 +13,6 @@ const rateLimit = require('express-rate-limit');
 // Cria uma instância do Express
 const app = express();
 
-// Adiciona um middleware para interpretar requisições com corpo em JSON
-app.use(express.json());
-
 // Importa o pacote cors para permitir requisições de diferentes origens
 const cors = require('cors');
 
